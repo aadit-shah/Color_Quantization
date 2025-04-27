@@ -1,4 +1,4 @@
-# 📄 README: Image Quantization Project
+Image Quantization
 
 ## Overview
 
