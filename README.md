@@ -1,4 +1,4 @@
-Image Quantization
+# Image Quantization
 
 ## Overview
 
