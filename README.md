@@ -78,7 +78,7 @@ project-folder/
   images/
     img1.jpg
     img2.png
-  your_script.py
+  color_quantization.py
 ```
 
 ### 3. Run the script
@@ -86,7 +86,7 @@ project-folder/
 In the terminal:
 
 ```bash
-python your_script.py
+python color_quantization.py
 ```
 
 The quantized images will be saved into a folder called `results/`, and you will see a side-by-side display of results for each image.
