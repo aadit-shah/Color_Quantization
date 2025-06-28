@@ -10,14 +10,11 @@ This project implements and compares **three different color quantization algori
 
 This project focuses on **implementing and evaluating classical color quantization algorithms without external machine learning libraries**.
 
-The goal of this assignment is to **compress color images** by reducing the number of unique colors while maintaining visual quality, and **analyze** the trade-offs between simplicity, performance, and quality.
-
-We also evaluate the results using standard image similarity metrics:  
-**MSE (Mean Squared Error)**, **PSNR (Peak Signal-to-Noise Ratio)**, and **SSIM (Structural Similarity Index)**.
+The goal of this project is to **compress color images** by reducing the number of unique colors while maintaining visual quality, and **analyze** the trade-offs between simplicity, performance, and quality.
 
 ---
 
-##  How Each Algorithm Works
+##  Algorithms
 
 ### 1. **Uniform Quantization**
 - The pixel values are uniformly divided into bins.
@@ -48,13 +45,11 @@ We also evaluate the results using standard image similarity metrics:
 
 ---
 
-##  Why These Methods Were Chosen
+##  Methods
 
 - **Uniform Quantization**: Provides a **simple baseline**. It's fast and easy to implement but does not adapt to the image structure.
 - **K-Means Quantization**: Represents a **high-quality adaptive method** that often gives the best looking images at the cost of higher computation time.
 - **Median-Cut Quantization**: A **classic algorithm** that balances speed and adaptiveness, widely used historically (e.g., in GIF compression).
-
-Together, these three algorithms give a **good spectrum** from simple to more complex, and from fast to more accurate.
 
 ---
 
@@ -91,13 +86,11 @@ python color_quantization.py
 
 The quantized images will be saved into a folder called `results/`, and you will see a side-by-side display of results for each image.
 
-Metrics for each method and the average across all images will be printed in the terminal.
-
 ---
 
-##  How to Modify
+##  How to Use
 
-You can easily adjust parameters at the top of the `main()` function:
+You can adjust parameters at the top of the `main()` function:
 
 | Parameter   | What it controls                              | Example Change                |
 |:-----------:|:----------------------------------------------|:-------------------------------|
@@ -125,17 +118,5 @@ show = False  # Disable visualization
 - **PSNR (Peak Signal-to-Noise Ratio)**: Higher is better.
 - **SSIM (Structural Similarity Index)**: Closer to 1 is better.
 
-These give a **quantitative comparison** of how much visual distortion is introduced by each quantization method.
-
 ---
 
-# Summary
-
-This project shows how different color quantization methods perform in terms of speed and image quality.  
-Each method has its strengths and weaknesses depending on the application:
-
-- Use **Uniform Quantization** for speed and simplicity.
-- Use **K-Means** for best quality but more compute.
-- Use **Median-Cut** for a good balance when fast adaptive compression is needed.
-
----
