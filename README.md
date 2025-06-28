@@ -17,7 +17,7 @@ We also evaluate the results using standard image similarity metrics:
 
 ---
 
-## ✨ How Each Algorithm Works
+##  How Each Algorithm Works
 
 ### 1. **Uniform Quantization**
 - The pixel values are uniformly divided into bins.
@@ -48,7 +48,7 @@ We also evaluate the results using standard image similarity metrics:
 
 ---
 
-## 🎯 Why These Methods Were Chosen
+##  Why These Methods Were Chosen
 
 - **Uniform Quantization**: Provides a **simple baseline**. It's fast and easy to implement but does not adapt to the image structure.
 - **K-Means Quantization**: Represents a **high-quality adaptive method** that often gives the best looking images at the cost of higher computation time.
@@ -58,7 +58,7 @@ Together, these three algorithms give a **good spectrum** from simple to more co
 
 ---
 
-## ⚙️ How to Run
+## ⚙ How to Run
 
 ### 1. Setup
 
@@ -95,7 +95,7 @@ Metrics for each method and the average across all images will be printed in the
 
 ---
 
-## 🛠️ How to Modify
+##  How to Modify
 
 You can easily adjust parameters at the top of the `main()` function:
 
@@ -119,7 +119,7 @@ show = False  # Disable visualization
 
 ---
 
-## 📊 Metrics Explained
+##  Metrics 
 
 - **MSE (Mean Squared Error)**: Lower is better.
 - **PSNR (Peak Signal-to-Noise Ratio)**: Higher is better.
@@ -129,7 +129,7 @@ These give a **quantitative comparison** of how much visual distortion is introd
 
 ---
 
-# ✅ Conclusion
+# Summary
 
 This project shows how different color quantization methods perform in terms of speed and image quality.  
 Each method has its strengths and weaknesses depending on the application:
