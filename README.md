@@ -53,7 +53,7 @@ The goal of this project is to **compress color images** by reducing the number 
 
 ---
 
-## ⚙ How to Run
+##  How to Run
 
 ### 1. Setup
 
